@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  dashboard:
+    build: .
+    container_name: hicss-app-dashboard
+    ports:
+      - "8500:8500"
+    restart: unless-stopped
