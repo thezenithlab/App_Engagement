@@ -33,7 +33,8 @@ def get_apps():
     # Fetch only apps that have valid coordinates (top 10,000 apps)
     cursor.execute("""
         SELECT OriginalID, title, genre, realInstalls, reviews, score, 
-               psychographic_class, motivational_driver, embedding_x, embedding_y 
+               psychographic_class, motivational_driver, primary_motivation, 
+               emotional_payoff, success_metric, embedding_x, embedding_y 
         FROM classified_apps 
         WHERE embedding_x IS NOT NULL AND embedding_y IS NOT NULL
     """)
@@ -782,34 +783,10 @@ def home(request: Request):
             badge.textContent = app.motivational_driver;
             badge.className = `detail-badge badge-${app.motivational_driver.toLowerCase()}`;
 
-            // Motivational driver subcategorization lookup (from user comparison matrix PNG)
-            const driverDetails = {
-                'Achievement': {
-                    motivation: 'Efficiency',
-                    payoff: 'Relief / Control',
-                    success: 'Task Completion'
-                },
-                'Connection': {
-                    motivation: 'Belonging',
-                    payoff: 'Validation / Security',
-                    success: 'Interaction / Updates'
-                },
-                'Escape': {
-                    motivation: 'Stimulation',
-                    payoff: 'Pleasure / Distraction',
-                    success: 'Time spent / "Flow"'
-                },
-                'Growth': {
-                    motivation: 'Competence',
-                    payoff: 'Pride / Mastery',
-                    success: 'Streak / New Skill'
-                }
-            };
-            
-            const driverInfo = driverDetails[app.motivational_driver] || { motivation: '-', payoff: '-', success: '-' };
-            document.getElementById('det-motivation').textContent = driverInfo.motivation;
-            document.getElementById('det-payoff').textContent = driverInfo.payoff;
-            document.getElementById('det-success').textContent = driverInfo.success;
+            // Dynamically populate metrics directly from SQLite database columns
+            document.getElementById('det-motivation').textContent = app.primary_motivation || '-';
+            document.getElementById('det-payoff').textContent = app.emotional_payoff || '-';
+            document.getElementById('det-success').textContent = app.success_metric || '-';
             
             // Framework explanation details
             let theoryText = "";
