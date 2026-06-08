@@ -16,7 +16,8 @@ Our taxonomy divides the application ecosystem along two core theoretical framew
 
 References:  
 [1] Geng, J., & Guo, Y. L. (2022). **App types, user psychological and instrumental needs, and user experience in the sharing economy: An empirical research.** Entertainment Computing, 41, 100467.  
-[2] Hassenzahl, M. (2003). **The Thing and I: Understanding the relationship between the user and the product**, Blythe, MA, Monk, AF, Overbeeke, K. & Wright, P.(eds) Funology: From Usability to Enjoyment.
+[2] Hassenzahl, M. (2003). **The Thing and I: Understanding the relationship between the user and the product**, Blythe, MA, Monk, AF, Overbeeke, K. & Wright, P.(eds) Funology: From Usability to Enjoyment.  
+[3] Katz, E., Blumler, J., & Gurevitch, M. (1974). **Uses and gratification theory**. Public Opinion Quarterly, 37(4), 509-523.  
 
 ### 2. The 4-Quadrant Motivational Drivers Matrix
 To provide high-resolution mapping, we subcategorize apps into four motivational drivers:
