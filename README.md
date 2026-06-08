@@ -14,6 +14,10 @@ Our taxonomy divides the application ecosystem along two core theoretical framew
 *   **Hedonic Use (SELF-Type):** Driven by intrinsic motivation, leisure, play, self-expression, identity, and emotional validation (e.g., social networks, video streaming, casual gaming).
 *   **Pragmatic / Utilitarian Use (ACT-Type):** Driven by extrinsic motivation, usability, efficiency, practical problem solving, and task completion (e.g., financial banking, spreadsheets, system maintenance tools).
 
+References:
+[1] Geng, J., & Guo, Y. L. (2022). App types, user psychological and instrumental needs, and user experience in the sharing economy: An empirical research. Entertainment Computing, 41, 100467.
+[2] Hassenzahl, M. (2003). The Thing and I: Understanding the relationship between the user and the product, Blythe, MA, Monk, AF, Overbeeke, K. & Wright, P.(eds) Funology: From Usability to Enjoyment.
+
 ### 2. The 4-Quadrant Motivational Drivers Matrix
 To provide high-resolution mapping, we subcategorize apps into four motivational drivers:
 
